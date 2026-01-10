@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    color: white; 
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;  */
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    position: relative;
+    z-index: 9;
+    margin: 10px;
+}
+
+button:active{
+    scale: 0.95;
+}
+
+#m1{
+    height: 100%;
+    width: 100%;
+}
+
+#dv1{
+    height: 85%;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    /* height: 300px; */
+    width: 500px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+.outer{
+    height: 20px;
+    width: 100%;
+    background-color: rgb(208, 208, 202);
+    border-radius: 50px;
+    
+}
+
+.inner{
+    height: 100%;
+    width: 0%;
+    border-radius:  50px;
+    background-color: green;
+}
+
+h2{
+    color: black;
+    margin: 10px 50%;
+    font-size: 50px;
+}
+
+.btn2>button{
+    margin: 0% 40%;
+    background-color: green;
+    
+}
+
+.card p{
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card p span{
+    font-weight: 600;
+    color: blue;
+}
+

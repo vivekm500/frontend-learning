@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+body{
+    background-image: url(https://images.pexels.com/photos/16663660/pexels-photo-16663660.jpeg);
+
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/* css root variable*/
+:root{
+    --red: rgb(47, 201, 0);
+    /* --red is a variabe... in css a variable is created by taking --variableName*/
+
+    --x: 400px;
+    --y: 400px;
+}
+
+/*
+linear-gradient
+radial-gradient
+*/
+
+.box{
+    height: 100%;
+    width: 100%;
+
+    
+    /* border: 1px solid white; */
+    /* background: linear-gradient(in oklab to right, white,red,purple); */
+
+    background: radial-gradient(100px at var(--x) var(--y), rgba(247, 246, 246, 0) 0%, rgba(1, 1, 11, 0.85) 80%);
+
+    /* first two parameters written with at defines position (x and y axis) where gradient should be applied*/
+
+    /* background-color: var(--red); */
+}

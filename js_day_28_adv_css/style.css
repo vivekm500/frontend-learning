@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+
+    anchor-name: --some-anchor; /* default target element */
+}
+
+.box{
+   height: 200px;
+   width: 200px;
+
+}
+
+
+
+.red{
+    background-color: rgb(182, 10, 10);
+
+}
+
+.blue{
+    background-color: rgb(13, 13, 191);
+}
+
+.green{
+    background-color: rgb(8, 108, 8);
+}
+
+.box:hover{
+    anchor-name: --some-anchor;  /* all boxes on hover becomes target element */
+}
+
+
+
+.anchor{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: absolute;
+    top: anchor(top);
+    left: anchor(left);
+    bottom: anchor(bottom);
+    right: anchor(right);
+
+    pointer-events: none; /* now this element will not interact with mouse */
+
+    /* height: 50px;
+    width: 60px; */
+
+    position-anchor: --some-anchor; /* it is now position element */
+
+    transition: all 0.3s linear;
+
+    mix-blend-mode: exclusion;
+    /* in mix-blend-mode exclusion ... ye apne pichhe wale div ke opposite color le lega */
+    
+}

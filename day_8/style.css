@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* h1{
+    background-color: aqua;
+    display: inline-block;
+    we use display: inline-block; property to make block element to inline element
+}
+
+h2{
+    background-color: rgb(230, 87, 20);
+    display: inline-block;
+}  */
+
+  #parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;  
+    /* overflow: auto;  */
+    display: grid; 
+    grid-template-columns: 20% 50% 20% 10%; 
+    grid-template-rows: 30% 50% 10% 10%;   
+}  
+
+ .box{
+    /* height: 200px;
+    width: 200px;  */
+    background-color: crimson;   
+    /* border-top: 2px solid white; */
+    border: 3px solid black;   
+}  
+
+/* .box:nth-child(2n-1){
+    background-color: lightseagreen;
+} */
+
+/* .box:nth-child(3){
+    background-color: lightblue;
+} */
+
+ /* .box:nth-child(2){
+    background-color: lightblue;
+}
+
+.box:nth-child(3){
+    background-color: khaki;
+}
+
+.box:nth-child(4){
+    background-color: lightseagreen;
+} */
+
+ 
+#card{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#card h1{
+    font-size: 100px;
+    color: transparent;
+    /* background-image: url(https://media.istockphoto.com/id/627201370/photo/abstract-background-of-multi-colored-cubes.jpg?s=1024x1024&w=is&k=20&c=tGobzT3kUKo8etmG943DG37tRHwzWIiZjcg-auV9jzI=); */
+
+     background-image: url(https://imgs.search.brave.com/SijPmvLbMTUgGbe6L9nt0K65tcM9wxnWNln01iD1fPk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzE0L2U5/L2MxLzE0ZTljMWZh/MDg4OTFiNDFmMjNi/N2NkZDAyOTA0YzBl/LmpwZw); 
+     /* we can also apply gif video just paste its address in backgroung image  */
+    background-size: cover;
+     background-clip: text;   
+      /* to apply any backgroung property to text use background-clip: text;  and make text color transparent */
+
+      text-align: center;
+}
+
+#card h2{
+    font-size: 100px;
+    color: transparent;
+    background: linear-gradient(red,blue,yellow);
+    background-clip: text;
+    text-align: center;
+}
+
+#card h3{
+    font-size: 120px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    /* -webkit-text-stroke: ;  it used to give border to text */
+    text-align: center;
+}
+
+#chacha{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#chachi{
+    height: 400px;
+    width: 100%;
+    background-color: grey;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+   overflow: auto;
+}
+
+/* to remove default scrollbar */
+#chachi::-webkit-scrollbar{
+    display: none;
+} 
+
+
+/* to make cutomised scrollbar */
+ /* #chachi::-webkit-scrollbar{
+    background-color: lightblue;
+    height: 10px;
+}
+#chachi::-webkit-scrollbar-thumb{
+    background-color: blue;  
+} */
+
+
+#golu{
+    height: 100%;
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+#golu img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}

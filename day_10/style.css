@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/* h1{
+    color: red;
+    font-size: 60px;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+
+#inner{
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+} */
+
+
+/* #box{
+    height: 30vmax;
+    width: 30vmax;
+    background-color: crimson;
+}
+
+h1{
+    font-size: 10vmin;
+} */
+
+
+.parent{
+    width: 60%;
+    background-color: darkorange;
+    padding: 20px;
+    margin: 20px;
+
+    font-size: 40px;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h4{
+    font-size: 2em;
+}
+
+h6{
+    font-size: 1em;
+}
+
+p{
+    font-size: 1em;
+}
+
+
+/* px (pexels) :- fixed
+% (percent) :-depends on parent
+vw (viewport width) :- depends on viewport's width
+vh (viewport height) :- depends on viewport's height
+vmax (viewport maximum) :- depends on maximum viewport
+vmin (viewport minimum) :- depends on minimum viewport
+em :- depends on parent's size and can be controlled by parent
+1rem=16px according to the the root and can be controlled by root */

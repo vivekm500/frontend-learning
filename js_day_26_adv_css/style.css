@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+@keyframes changeBackgroundColor{
+    from{
+        background-color: whitesmoke;
+        border-radius: 0px;
+        scale: 1;
+    }
+    to{
+        background-color: red;
+        border-radius: 50px;
+        scale: 0.5;
+    }
+}
+
+/* keyfrmes is used to create animations ....in frames "from" btata h ki value kaha se lana h and "to" btata h ki value ko kahatk le jana h */
+
+/* @property is used to create custom property in css */
+
+@property --bgColor{
+    syntax: "<color>";
+    initial-value: red;
+    inherits: false;
+}
+
+/* we can also animate the custom property created by @property using @keyframews */
+
+@keyframes animateColor {
+    from{
+        --bgColor: red;
+    }
+    to{
+        --bgColor: blue;
+    }
+}
+
+.box{
+    height: 200px;
+    width: 400px;
+    background-color: var(--bgColor);
+    box-shadow: inset 5px 10px rgb(64, 243, 5) ; /* x y spread radius color*/
+
+    /* animation: changeBackgroundColor 5s infinite forwards alternate; */
+
+    /* 5s - time to comlete the animation apllication
+
+    infinte - no of times animation repeatition
+
+    forwads - hold the animation after completing its application
+
+    altenate - alternativel animation apply krte rho */
+
+    animation: animateColor 10s;
+}
+
+/* display , visibility...these are some property that can't be animated */
+
+h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 3rem;
+    color: rgb(247, 240, 248);
+    text-shadow: 5px 5px 1px rgb(241, 7, 34) ;
+}
+
+/* in box shadow inset attribute specifies ki shodow box ke andar bnega */
+
+/* inset can't be used with text shadow */
+
+/* CONIC GRADIEN */
+
+.box2{
+    height: 200px;
+    width: 400px;
+    gap: 20px;
+    background: conic-gradient(from 180deg, white, black, rgb(247, 5, 5), yellow);
+}
+

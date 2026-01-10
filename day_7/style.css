@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+  /* body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 400px;
+
+}   */
+
+#box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 400px;
+}
+
+#box1{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    color: white;
+    transform: translateX(50%);
+    /* transform: rotate(0deg); */
+    background-image: url(https://images.unsplash.com/photo-1576248003257-3c1bfecbba8a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=519);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+     /* transform: rotateX(45deg);  */
+     /* transform: rotateY(45deg);  */
+    /* transform: translateX(50%); */
+    transform: scale(1.5);
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    padding: 60px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.card1{
+    height: 250px;
+    width: 292px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease 1s;
+    overflow: hidden;
+}
+
+.card1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 1s; 
+}
+
+ .bottom{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent,black);
+    position: absolute;
+    bottom: -40%;
+     transition: all ease 0.5s; 
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+      gap: 10px; 
+
+} 
+
+/* .card1:hover{
+    background-color: black;
+} */
+
+/* .card1:hover img{
+    rotate: 45deg;
+} */
+
+.card1:hover .bottom{
+    bottom: 0;
+}
+
+.bottom h4{
+    color: white;
+    font-size: large;
+}
+
+.bottom h3{
+    color: red;
+    background-color: white;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+

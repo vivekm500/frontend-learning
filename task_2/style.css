@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+div{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-image: url(https://images.pexels.com/photos/12920331/pexels-photo-12920331.jpeg?cs=srgb&dl=pexels-introspectivedsgn-12920331.jpg&fm=jpg&_gl=1*1jly2a2*_ga*MTk4MTY4MDczOC4xNzU2MzIxMzgx*_ga_8JE65Q40S6*czE3NjAwNDM5ODckbzIkZzEkdDE3NjAwNDQwOTQkajMzJGwwJGgw);
+
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+@font-face {
+    font-family: danger;
+    src: url(../images/Another\ Danger\ -\ Demo.otf);
+}
+
+h1{
+    font-size: 80px;
+    font-family: danger;
+    font-weight: 500;
+    color: red;
+}
+
+button{
+    font-size: 20px;
+    margin-right: 350px;
+    padding: 10px 20px;
+    color: rgb(200, 237, 14);
+    background-color: rgb(88, 84, 84);
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}

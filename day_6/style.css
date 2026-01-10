@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#hero{
+    height: 100%;
+    width: 100%;
+}
+
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    z-index: 5;
+}
+
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 10;
+}
+
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 15;
+}
+
+#box4{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    /* clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);  for custom shape use clip path just visit any clip path web and copy paste clip path code of desired shape */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-direction: row;  */
+
+/* flex-wrap: wrap; */
+    flex-wrap: nowrap;
+
+    overflow: auto;
+}
+
+#child1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child2{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child3{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child4{
+    height: 200px;
+    width: 200px;
+    background-color: tan;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child5{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(215, 231, 99);
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child6{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child7{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child8{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child8{
+    height: 200px;
+    width: 200px;
+    background-color: tan;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child9{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(215, 231, 99);
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+#child1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 3px solid white;
+}
+
+#child2{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    border: 3px solid white;
+}
+
+#child3{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+    border: 3px solid white;
+}
+
+#child4{
+    height: 200px;
+    width: 200px;
+    background-color: tan;
+    border: 3px solid white;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+     padding: 20px;
+     display: flex; 
+    gap: 20px; 
+    flex-wrap: wrap;
+    overflow: auto;
+     
+}
+
+.card{
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.373);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card  img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover; /*this works in img tag and for background img use backgroun-size*/
+    border-radius: 50%;
+}
+
+.card h2{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.card p{
+    color: rgb(81, 78, 78);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    /* padding-left: 30px; */
+}
+
+.card button{
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: #3a3adeac;
+    border: none;
+    color: white;
+    margin-top: 5px;
+    border: 2px solid #3a3adeac;
+    cursor: pointer;
+}
+
+.card button:hover{
+    /* whatever property we will write in hover will bw applied to it when we will move our cursor to this */
+    background-color: crimson;
+    color: black;
+}

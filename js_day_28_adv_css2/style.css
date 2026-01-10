@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    transition: all 0.3s linear;
+}
+
+.red{
+    background-color: rgb(184, 16, 16);
+}
+
+.blue{
+    background-color: rgb(9, 9, 161);
+}
+
+.green{
+    background-color: rgb(8, 102, 8);
+}
+
+/* :has is a parent selector */
+body:has(.box:hover) .box{
+    transform: scale(0.8);
+    opacity: 0.5;
+}
+
+body .box:hover{
+    transform: scale(1.25) !important;
+    opacity: 1 !important;
+}

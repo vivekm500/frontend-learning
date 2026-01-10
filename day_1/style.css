@@ -1,0 +1,39 @@
+@font-face {
+    font-family: comic;
+    src: url(./images/Atlantis\ Famingo\ Italic\ DEMO\ VERSION.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    color: red;
+    background-color: blueviolet;
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#name{
+    color: chartreuse;
+    font-family: comic;
+}
+
+p{
+    color: blue;
+}
+
+.hero{
+    color: chocolate;
+}
