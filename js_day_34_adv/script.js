@@ -13,4 +13,8 @@
 // data aya -> resolve
 // data nhi aya -> reject
 
-new promise
+const prm = new promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve();
+    },3000);
+});
