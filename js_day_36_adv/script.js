@@ -81,7 +81,7 @@ Simulate sending bulk emails to 5 users. Treat each email-sending operation as a
 */
 
 
-const user =["viv123@gmail.com", "happy@email.com", "ravi2chhakka.com"];
+const users =["viv123@gmail.com", "happy@email.com", "ravi2chhakka.com"];
 
 function sendEmail(email){
     return new Promise((resolve, reject)=>{
@@ -100,17 +100,77 @@ function sendEmail(email){
 }
 
 
-sendEmail("viv@123")
-.then((data)=>{
-    console.log(data);
-})
-.catch((err)=>{
-    console.log(err);
-})
 
 
-function sendEmsils(userlist){
-    userlist.map((user)=>{
-        return 
+async function sendEmails(userlist){
+    let allresponses = userlist.map((email)=>{
+        return sendEmail(email)
+          .then((data) => {
+            return data;
+          })
+          .catch((err) => {
+            return err;
+          });
+    });
+
+    let ans = await Promise.all(allresponses)
+
+    ans.forEach((status)=>{
+        console.log(status);
     })
 }
+
+sendEmails(users);
+
+// Promise.all() -> it takes an iterable (typically an array) of promises and returns a single promise that resolves when all the input promises have resolved, or rejects if any one of thhe Promises fails
+/*
+BASIC SYNTAX
+
+Promise.all([p1, p2, p3])
+  .then(results => {
+    // results is an array of resolved values
+  })
+  .catch(error => {
+    // first rejection error
+  });
+
+  Order matters:
+
+Results are returned in the same order as input
+
+NOT the order they finish
+
+Example (understand this or you’re guessing)
+const p1 = Promise.resolve(1);
+const p2 = Promise.resolve(2);
+const p3 = Promise.resolve(3);
+
+Promise.all([p1, p2, p3])
+  .then(values => console.log(values));
+
+
+Output:
+
+[1, 2, 3]
+
+What happens if ONE fails
+const p1 = Promise.resolve("ok");
+const p2 = Promise.reject("fail");
+const p3 = Promise.resolve("ok");
+
+Promise.all([p1, p2, p3])
+  .then(console.log)
+  .catch(console.error);
+
+
+Output:
+
+fail
+
+
+p3 might still be running
+
+But you don’t get its result
+
+Promise.all is already rejected
+*/
