@@ -29,8 +29,8 @@ prm
 
 let prm2 = new Promise((resolve, reject)=>{
     // logic to go to meta and get data
-    // if data aaya -> resolve
-    // else reject
+    // if data aaya -> resolve -> .then() chlega
+    // else reject -> .catch() chlega
 })
 
 prm2.then(()=>{
