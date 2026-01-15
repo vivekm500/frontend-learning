@@ -109,4 +109,44 @@ console.log(restSkills)
 
 // normal js - ek hi jgh p sbkuchh h
 
-//  module - 
+// module js - har ek js alg alg role play kr rhi h....isme hm different js file m hm import export kr sakte.... code separated rhta h
+
+// import userName from './app.js'
+
+// console.log(userName)
+
+//while importing default exported from a module then it is not necessary to use same variable name here in importing module
+
+
+import king from './app.js'
+
+console.log(king)
+
+import ability from './test.js'
+
+console.log(ability)
+
+//import ability from './app.js' ❌
+// jo jis module m likha gya wohi se impoert expoert hoga
+
+
+// export default har module(js file) ek hi baar kr skti h but import multiple times kar sakti h
+
+
+// Importing named export
+// in this we have to use exact varible name as exported from other module within curly braces
+
+import {username} from './test.js'
+import {bestFriend} from './test.js'
+
+console.log(username);
+console.log(bestFriend);
+
+import {marks} from './app.js'
+
+console.log(marks)
+
+
+import rehman from './app.js' // we have not used curly braces with rehman so here object hamza will be recieved as it is default exported 
+
+console.log(rehman.name) 
