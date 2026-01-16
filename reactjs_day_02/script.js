@@ -35,3 +35,25 @@ It does ONE job well: rendering and managing UI efficiently
 It was created by Facebook (Meta) and is now one of the most used UI libraries in the world.
 */
 
+// GSA
+
+// GSAP use krne k liye gsap ki cdn(content delivery network) html me javaScript ke just upar lagate h
+
+// gsap.to('#box',{
+//     x: 500,
+//     duration: 2,
+//     delay: 1
+// })
+
+
+//      REACT
+
+// REACT - UI bnana
+// ReactDOM - React and DOM ko connect krna
+
+// let h1 = document.createElement('h1')
+
+// h1.innerHTML = 'Hello from JS'
+
+// document.body.appendChild(h1)
+
