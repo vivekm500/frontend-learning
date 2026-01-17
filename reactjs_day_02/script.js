@@ -1,11 +1,10 @@
-import hero from './app.js'
+import hero from "./app.js";
 
-console.log(hero())
+console.log(hero());
 
-import test from './test.js'
+import test from "./test.js";
 
-console.log(test())
-
+console.log(test());
 
 //    REACT
 
@@ -45,7 +44,6 @@ It was created by Facebook (Meta) and is now one of the most used UI libraries i
 //     delay: 1
 // })
 
-
 //      REACT
 
 // REACT - UI bnana
@@ -57,20 +55,19 @@ It was created by Facebook (Meta) and is now one of the most used UI libraries i
 
 // document.body.appendChild(h1)
 
-let h1 = React.createElement('h1', {id: 'hero'}, 'Hello from React')
+let h1 = React.createElement("h1", { id: "hero" }, "Hello from React");
 
-let h2 = React.createElement("h1", {class:'heroin'}, "This is h2");
+let h2 = React.createElement("h1", { class: "heroin" }, "This is h2");
 
 // let container = document.querySelector('#container')
 
-// let div = React.createElement('div', {id: 'parent', class: 'elem'}, [h1,h2,h()])
+// let div = React.createElement('div', {id: 'parent', class: 'elem'}, [h1,h2,])
 
-let root = ReactDOM.createRoot(document.querySelector('#container'))
+let root = ReactDOM.createRoot(document.querySelector("#container"));
 
 //root.render(h1) // it only accepts one argument
 
-root.render(div)
-
+// root.render(div)
 
 //
 // function  h1(){
@@ -79,11 +76,26 @@ root.render(div)
 
 //   OR
 
-    
-const h = ()=> React.createElement('h1', null, 'Hello from function h1')
+const h = () => React.createElement("h1", null, "Hello from function h1");
+
+// let div = React.createElement("div", { id: "parent", class: "elem" }, [
+//   h1,
+//   h2,
+//   h(),
+// ]);
+
+// root.render(div);
+
+import {box1} from "./app.js";
+
+import { circle } from "./test.js";
 
 let div = React.createElement("div", { id: "parent", class: "elem" }, [
   h1,
   h2,
   h(),
+  box1(),
+  circle()
 ]);
+
+root.render(div);
