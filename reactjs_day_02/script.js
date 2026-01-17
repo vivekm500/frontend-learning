@@ -57,3 +57,33 @@ It was created by Facebook (Meta) and is now one of the most used UI libraries i
 
 // document.body.appendChild(h1)
 
+let h1 = React.createElement('h1', {id: 'hero'}, 'Hello from React')
+
+let h2 = React.createElement("h1", {class:'heroin'}, "This is h2");
+
+// let container = document.querySelector('#container')
+
+// let div = React.createElement('div', {id: 'parent', class: 'elem'}, [h1,h2,h()])
+
+let root = ReactDOM.createRoot(document.querySelector('#container'))
+
+//root.render(h1) // it only accepts one argument
+
+root.render(div)
+
+
+//
+// function  h1(){
+//     return React.createElement('h1', null, 'Hello from function h1')
+//  }
+
+//   OR
+
+    
+const h = ()=> React.createElement('h1', null, 'Hello from function h1')
+
+let div = React.createElement("div", { id: "parent", class: "elem" }, [
+  h1,
+  h2,
+  h(),
+]);
