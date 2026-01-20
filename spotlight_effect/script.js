@@ -6,4 +6,4 @@ addEventListener('mousemove', function(elem){
     document.body.style.setProperty("--y", elem.clientY + "px");
 })
 
-// .setProperty("--rootVariable", value):- is used to update the value of root variable
+// .setProperty("--rootVariable", value):- is used to update the value of root variable in js
