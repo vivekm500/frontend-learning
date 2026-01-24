@@ -11,3 +11,6 @@ const App = () => {
 }
 
 export default App
+
+
+// To use tailwind css in React go to tailwind css website and follow the steps to install tailwind css using vite
