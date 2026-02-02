@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(7, 202, 237);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 100px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+button{
+    background-color: rgb(10, 213, 136);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:active{
+    scale: 0.95;
+}
+
+.option{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* .men{
+    width: fit-content;
+    background-color: blue;
+    color: white;
+    padding: 20px 40px;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 10px;
+} */
+
+/* .women{
+    width: fit-content;
+    background-color: rgb(227, 8, 59);
+    color: white;
+    padding: 20px 40px;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 10px;
+} */
+
+.wash{
+    width: fit-content;
+    background-color: blue;
+    color: white;
+    height: 200px;
+    width: 300px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    background: conic-gradient(violet,blue,green,yellow,orange,red,violet);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.Male{
+    background: rgb(29, 29, 221);
+}
+
+.Female{
+    background: rgb(211, 45, 73);
+}
+
+.Other{
+    background: conic-gradient(violet,blue,green,yellow,orange,red,violet);
+}
