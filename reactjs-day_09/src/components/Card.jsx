@@ -3,7 +3,7 @@ import React from 'react'
 const Card = (props) => {
   return (
     <div
-      
+      key={props.idx}
       className="lg:w-[23vw] md:w-[30vw] sm:w-[45vw]  rounded-2xl py-5 px-8 text-center flex flex-col items-center bg-white text-black"
     >
       <img
