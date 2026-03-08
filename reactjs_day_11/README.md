@@ -1,16 +1,21 @@
-# React + Vite
+Context Api is used in data centralization
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+instead of passing data in chain manner from upper to lower we make a center of data from where any component can access the data so that we don't need to pass data through different level/component or we don't need to do props drilling at each component
 
-Currently, two official plugins are available:
+The Context API in React is a built-in feature that allows you to share data, such as a global state, functions, or settings (like a UI theme or authentication status), across the component tree without having to pass props manually at every level. This solves a common problem called "prop drilling", which makes code cumbersome and difficult to maintain as applications grow. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Concepts and How It Works
 
-## React Compiler
+The Context API involves three core components:
+createContext: A function used to create a new Context object. This object contains a Provider and a Consumer. You can pass an optional default value when creating it.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Context.Provider: A React component that wraps the part of your component tree where you want the shared data to be available. It accepts a value prop, which holds the data you want to pass down to its descendants.
 
-## Expanding the ESLint configuration
+useContext Hook: A modern functional component hook used to read the context value from the closest Provider above it in the component tree. This is the primary way to consume context in modern React, replacing the legacy Context.Consumer component used in class components. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+--------------------------------
+
+Hum data ko upper se lower bhej sakte but lower se upper nhi
+
+lower se upper bhejne ke liye upper wale component m ek function bnao r uss function ko lower component me pass kr do ....aur jb uss function ko lower component me call kro to uske argument me data pass kr do r upper wale omponent ke function me uss data ko recieve kr lo
+
