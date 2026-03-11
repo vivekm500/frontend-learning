@@ -11,11 +11,11 @@ const ProductContext = (props) => {
      setProductData(await getAllProductData())
   }
 
-  const getFirstData = async (id) => {
-    const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
+  // const getFirstData = async (id) => {
+  //   const response = await axios.get(`https://fakestoreapi.com/products/${id}`);
 
-    console.log(response.data);
-  };
+  //   console.log(response.data);
+  // };
 
   useEffect(function () {
     setdata();
